@@ -9,7 +9,7 @@
 
 %\usepackage{enumerate}
 \usepackage{enumitem}
-\usepackage{longtable}
+\usepackage{longtable,adjustbox}
 \usepackage{booktabs}
 
 \setlist[enumerate,1]{label={\arabic*.},leftmargin=*,widest=99}
@@ -1034,18 +1034,17 @@ following inmate release on parole in December 2011, direct correspondence conti
 % -------- Teaching experience --------------------------------------------
 
 %\newpage
-{\small
-
 \textbf{Courses Taught}
 
 Key: LD$=$undergraduate lower division, UD$=$undergraduate upper division, G$=$graduate
 
-\begin{center}
+\begin{center}\footnotesize
 \begin{longtable}{@{} l l l rrr @{}}
 \toprule
 Term & Course & Course title & Credit & Students & Student \\
      &        &              & hours  &          & credit-hours \\
 \midrule
+\endhead
 
 \multicolumn{6}{c}{\textbf{University of Michigan}} \\
 \addlinespace[0.1in]
@@ -1070,10 +1069,7 @@ Term & Course & Course title & Credit & Students & Student \\
 
 \textbf{Spring 2006} & & Calculus I & 5 & 13 & 65 \\
  & & College Algebra & 3 & 14 & 42 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2005--06 totals:}} & \textbf{19} & \textbf{82} \\
- \cmidrule{2-4}
-%\addlinespace[0.1in]
+\addlinespace[0.1in]
 
 
 \textbf{Fall 2006} & & Calculus II & 5 & 17 & 85 \\
@@ -1082,43 +1078,31 @@ Term & Course & Course title & Credit & Students & Student \\
 
 \textbf{Spring 2007} & & Calculus I & 5 & 15 & 75 \\
  & & Complex Variables (UD) & 3 & 5 & 15 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2006--07 totals:}} & \textbf{16} & \textbf{59} \\
-%\addlinespace[0.1in]
 
 \midrule
 
 \multicolumn{6}{c}{\textbf{Texas A\&M University}} \\
 \addlinespace[0.1in]
 
-\textbf{Fall 2007} & Business Mathematics I (Finite Math) & 3 & 82 \\
- & Business Mathematics I (Finite Math) & 3 & 88 \\
+\textbf{Fall 2007} & & Business Mathematics I (Finite Math) & 3 & 82 & 246\\
+ & & Business Mathematics I (Finite Math) & 3 & 88 & 264 \\
 \addlinespace[0.1in]
 
-\textbf{Spring 2008} & Calculus II & 4 & 90 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2007--08 totals:}} & \textbf{10} & \textbf{260} \\
- \cmidrule{2-4}
-%\addlinespace[0.1in]
+\textbf{Spring 2008} & & Calculus II & 4 & 90 & 360 \\
+\addlinespace[0.1in]
 
-\textbf{Fall 2008} & & Topics in Applied Mathematics I (Linear Algebra) (UD) & 3 & 19 & 57 \\
+\textbf{Fall 2008} & & Topics in Applied Mathematics I (Linear Algebra) & 3 & 19 & 57 \\
  & & Topics in Applied Mathematics I (Linear Algebra) & 3 & 35 & 105 \\
 \addlinespace[0.1in]
 
 \textbf{Spring 2009} & & Calculus II & 4 & 88 & 352 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2008--09 totals:}} & \textbf{10} & \textbf{142} \\
- \cmidrule{2-4}
-%\addlinespace[0.1in]
+\addlinespace[0.1in]
 
 \textbf{Fall 2009} & & Calculus II & 4 & 43 & 172 \\
  & & Calculus II & 4 & 48 & 192 \\
 \addlinespace[0.1in]
 
 \textbf{Spring 2010} & & Calculus II & 4 & 36 & 144 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2009--10 totals:}} & \textbf{12} & \textbf{127} \\
-%\addlinespace[0.1in]
 
 \midrule
 
@@ -1130,9 +1114,9 @@ Term & Course & Course title & Credit & Students & Student \\
 
 \textbf{Spring 2011} & 170 & Calculus I & 4 & 36 & 144 \\
  & 311 & Foundations of Geometry & 3 & 27 & 81 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2010--11 totals:}} & \textbf{11} & \textbf{88} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2010--11 totals:}} & \textbf{11} & \textbf{88} & \textbf{325} \\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
 \textbf{Fall 2011} & 187 & Discrete and Foundational Mathematics I & 4 & 25 & 100 \\
@@ -1144,9 +1128,9 @@ Term & Course & Course title & Credit & Students & Student \\
 \addlinespace[0.1in]
 
 \textbf{Summer 2012} & 275 & Multivariable and Vector Calculus & 4 & 23 & 92 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2011--12 totals:}} & \textbf{18} & \textbf{92} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2011--12 totals:}} & \textbf{18} & \textbf{92} & \textbf{349}\\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
 \textbf{Fall 2012} & 187 & Discrete and Foundational Mathematics I & 4 & 25 & 100 \\
@@ -1157,9 +1141,9 @@ Term & Course & Course title & Credit & Students & Student \\
 \textbf{Spring 2013} & 515 & Advanced Analysis (G) & 3 & 5 & 15 \\
  & & Independent study: complex analysis & 3 & 1 \\
  & & Independent study: graph theory & 3 & 1 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2012--13 totals:}} & \textbf{21} & \textbf{85} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2012--13 totals:}} & \textbf{21} & \textbf{90} & \textbf{350} \\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
 \textbf{Fall 2013} & 275 & Multivariable and Vector Calculus & 4 & 120 & 480 \\
@@ -1171,84 +1155,84 @@ Term & Course & Course title & Credit & Students & Student \\
 \addlinespace[0.1in]
 
 \textbf{Summer 2014} & 275 & Multivariable and Vector Calculus & 4 & 30 & 120 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2013--14 totals:}} & \textbf{17} & \textbf{178} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2013--14 totals:}} & \textbf{17} & \textbf{178} & \textbf{684} \\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
 \textbf{Fall 2014} & 187 & Discrete and Foundational Mathematics I & 3 & 27 & 81 \\
  & 507 & Advanced Number Theory (G) & 3 & 3 & 9 \\
- & & Independent study: algebraic geometry & 3 & 1 \\
- & 401 & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/3/}{\emph{A brief encounter with linear codes}} & 1 & 1 \\
+ & & Independent study: algebraic geometry & 3 & 1 & 3 \\
+ & 401 & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/3/}{\emph{A brief encounter with linear codes}} & 1 & 1 & 1 \\
 \addlinespace[0.1in]
 
 \textbf{Spring 2015} & 301 & Introduction to Linear Algebra (UD) & 3 & 26 & 78 \\
  & 512 & Advanced Topology (G) & 3 & 5 & 15 \\
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2014--15 totals:}} & \textbf{16} & \textbf{63} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2014--15 totals:}} & \textbf{16} & \textbf{63} & \textbf{187} \\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
-\textbf{Fall 2015} & Foundations of Analysis (UD) & 3 & 22 \\
- & Advanced Calculus (UD/G) & 4 & 6 \\
- & Independent study: Elliptic curves & 1 & 1 \\
+\textbf{Fall 2015} & 314 & Foundations of Analysis (UD) & 3 & 22 & 66 \\
+ & 415/515 & Advanced Calculus (UD/G) & 4 & 6 & 24 \\
+ & & Independent study: Elliptic curves & 1 & 1 & 1 \\
 \addlinespace[0.1in]
 
-\textbf{Spring 2016} & Discrete and Foundational Mathematics I & 3 & 14 \\
- & Foundations of Geometry & 3 & 10 \\
- & Senior thesis: \emph{Cubik Mathemagic: Group theory} & 1 & 1 \\
- & \qquad \emph{of Rubik's cubes} & & \\
- & Seminar in Mathematics & 1 & 1 \\
+\textbf{Spring 2016} & 187 & Discrete and Foundational Mathematics I & 3 & 14 & 42 \\
+ & 311 & Foundations of Geometry & 3 & 10 & 30 \\
+ & 401 & Senior thesis: \emph{Cubik Mathemagic: Group theory} & 1 & 1 & 1 \\
+ & & \qquad \emph{of Rubik's cubes} & & \\
+ & 498/598 & Seminar in Mathematics & 1 & 1 & 1 \\
 
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2015--16 totals:}} & \textbf{16} & \textbf{26} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2015--16 totals:}} & \textbf{16} & \textbf{55} & \textbf{165} \\
+ \cmidrule{3-6}
 %\addlinespace[0.1in]
 
-\textbf{Fall 2016} & Sabbatical & & \\
+\textbf{Fall 2016} & & Sabbatical & & & \\
 \addlinespace[0.1in]
 
-\textbf{Spring 2017} & Discrete and Foundational Mathematics II (UD) & 4 & 5 \\
- & Intro.\ to Abstract Algebra and Number Theory (UD) & 3 & 17 \\
- & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/6/}{\emph{Complementary coffee cups}} & 1 & 1 \\
- & Senior thesis: \emph{From Rings to Graphs: A Different} & 1 & 1 \\
- & \qquad \emph{Look at Structure} & & \\
+\textbf{Spring 2017} & 387 & Discrete and Foundational Mathematics II & 4 & 5 & 20 \\
+ & 305 & Intro.\ to Abstract Algebra and Number Theory & 3 & 17 & 51 \\
+ & 401 & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/6/}{\emph{Complementary coffee cups}} & 1 & 1 & 1 \\
+ & 401 & Senior thesis: \emph{From Rings to Graphs: A} & 1 & 1 & 1 \\
+ & & \qquad \emph{Different Look at Structure} & & \\
 \addlinespace[0.1in]
 
-\textbf{Summer 2017} & Multivariable and Vector Calculus & 4 & 21 \\
-                     & Multivariable and Vector Calculus & 4 & 15 \\
+\textbf{Summer 2017} & 275 & Multivariable and Vector Calculus & 4 & 21 & 84 \\
+                     & 275 & Multivariable and Vector Calculus & 4 & 15 & 60 \\
 
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2016--17 totals:}} & \textbf{17} & \textbf{60} \\
-  \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2016--17 totals:}} & \textbf{17} & \textbf{60} & \textbf{217} \\
+ \cmidrule{3-6}
 
-\textbf{Fall 2017} & Discrete and Foundational Mathematics I & 3 & 13 \\
- & Abstract Algebra (UD/G) & 3 & 19 \\
- & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/7/}{\emph{An Exploration of the Chromatic}} & 1 & 1 \\
- & \qquad \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/7/}{\emph{Polynomial}} & & \\
- & Senior thesis: \emph{Hyperbolic Geometry: History,} & 1 & 1 \\
- & \qquad \emph{Models, and Art} & & \\
+\textbf{Fall 2017} & 187 & Discrete and Foundational Mathematics I & 3 & 13 & 39 \\
+ & 405/505 & Abstract Algebra (UD/G) & 3 & 19 & 57 \\
+ & 401 & Senior thesis: \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/7/}{\emph{An Exploration of the Chromatic}} & 1 & 1 & 1 \\
+ & & \qquad \href{https://scholarworks.boisestate.edu/math_undergraduate_theses/7/}{\emph{Polynomial}} & & \\
+ & 401 & Senior thesis: \emph{Hyperbolic Geometry: History,} & 1 & 1 & 1 \\
+ & & \qquad \emph{Models, and Art} & & \\
 \addlinespace[0.1in]
 
-\textbf{Spring 2018} & Discrete and Foundational Mathematics I & 3 & 15 \\
- & Advanced Algebra (G) & 3 & 8 \\
+\textbf{Spring 2018} & 187 & Discrete and Foundational Mathematics I & 3 & 15 & 45 \\
+ & 506 & Advanced Algebra (G) & 3 & 8 & 24 \\
 \addlinespace[0.1in]
 
-\textbf{Summer 2018} & Multivariable and Vector Calculus & 4 & 14 \\
+\textbf{Summer 2018} & 275 & Multivariable and Vector Calculus & 4 & 14 & 56 \\
 
- \cmidrule{2-4}
- & \multicolumn{1}{r}{\textbf{2017--18 totals:}} & \textbf{18} & \textbf{71} \\
- \cmidrule{2-4}
+ \cmidrule{3-6}
+ & & \multicolumn{1}{r}{\textbf{2017--18 totals:}} & \textbf{18} & \textbf{71} & \textbf{223} \\
+ \cmidrule{3-6}
 
-\textbf{Fall 2018} & Calculus I: Theory and Applications & 4 & 8 \\
- & Intro.\ to Abstract Algebra and Number Theory (UD) & 3 & 4 \\
- & Senior thesis: \emph{The Cayley-Bacharach Theorem} & 1 & 1 \\
- & Seminar in Mathematics & 1 & 1 \\
+\textbf{Fall 2018} & 171 & Calculus I: Theory and Applications & 4 & 8 & 32 \\
+ & 305 & Intro.\ to Abstract Algebra and Number Theory & 3 & 4 & 12 \\
+ & 401 & Senior thesis: \emph{The Cayley-Bacharach Theorem} & 1 & 1 & 1 \\
+ & 498/598 & Seminar in Mathematics & 1 & 1 & 1 \\
 \addlinespace[0.1in]
 
-\textbf{Spring 2019} & Discrete and Foundational Mathematics I & 3 & 17 \\
- & Discrete and Foundational Mathematics II (UD) & 4 & 4 \\
- & Number Theory (UD) & 3 & 5 \\
+\textbf{Spring 2019} & 187 & Discrete and Foundational Mathematics I & 3 & 17 & 51 \\
+ & 387 & Discrete and Foundational Mathematics II (UD) & 4 & 4 & 16 \\
+ & 406 & Number Theory (UD) & 3 & 5 & 15 \\
 \addlinespace[0.1in]
 
 \bottomrule
@@ -1257,7 +1241,6 @@ Term & Course & Course title & Credit & Students & Student \\
 \end{longtable}
 \end{center}
 
-}
 
 
 % -------- Citizenship --------------------------------------------
