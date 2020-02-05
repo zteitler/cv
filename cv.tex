@@ -14,12 +14,31 @@
 
 \setlist[enumerate,1]{label={\arabic*.},leftmargin=*,widest=99}
 
+
+
+
 %\usepackage{tabls}
 %\setlength\tablinesep{0pt}
 %\setlength\arraylinesep{0pt}
 %\setlength\extrarulesep{0pt}
 
 \usepackage[breaklinks,colorlinks,allcolors=black]{hyperref}
+
+\usepackage{calc,cleveref,crossreftools}
+\crtrefundefinedtext{0}
+
+\newcounter{revcount}
+\newcommand\revcounter[1]{%
+\setcounter{revcount}{1+\crtcrefnumber{enum-\EnumitemId}-\value{#1}}} \AddEnumerateCounter\revcounter\revcounter{} % the 2nd is dummy
+
+\SetEnumitemKey{revarabic}
+%  {label = \revcounter*(\arabic{revcount}),
+%   ref = (\arabic{revcount}),
+%   after = \label{enum-\EnumitemId}}
+  {label = \revcounter*\arabic{revcount}.,
+   ref = \arabic{revcount},
+   after = \label{enum-\EnumitemId}}
+
 
 %\addtolength{\parskip}{\baselineskip}
 \setlength{\parindent}{0in}
@@ -87,7 +106,7 @@ University of California--Santa Barbara, 2000
 
 
 \textbf{Publications}
-\begin{enumerate}
+\begin{enumerate}[revarabic,leftmargin=*]
 
 \item Mats Boij, Zach Teitler,
 \emph{A bound for the Waring rank of the determinant via syzygies},
@@ -97,7 +116,7 @@ Linear Alg.\ Appl.,
 
 \item Brian Harbourne, Juan Migliore, Uwe Nagel, Zach Teitler,
 \emph{Unexpected hypersurfaces and where to find them},
-submitted
+Michigan Math.\ J., to appear
 
 \item Jaros{\l}aw Buczy\'nski, Kangjin Han, Massimiliano Mella, Zach Teitler,
 \emph{On the locus of points of high rank},
@@ -319,7 +338,7 @@ Comm.\ Alg.,
 
 
 \textbf{Unpublished}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Zach Teitler,
 \emph{Geometric lower bounds for generalized ranks} %,
 %submitted 
@@ -329,7 +348,7 @@ Comm.\ Alg.,
 
 
 \textbf{Software}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item MultiplierIdeals:
 a Macaulay2 package for computing multiplier ideals of special ideals including monomial ideals, monomial curves, and generic determinantal ideals.
@@ -362,7 +381,7 @@ a Macaulay2 package providing iterators for several common combinatorial structu
 
 
 \textbf{Grants and Awards}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Simons Foundation Collaboration Grants for Mathematicians (award \#354574, 2015--2020, \$35,000)
 \item COAS Travel Grant, for travel to CMS Winter Meeting, Hamilton, Ontario, December 2014 (\$500)
 \item COAS Travel Grant, for travel to Institute of Mathematics of the Polish Academy of Sciences, Warsaw, January 2013 (\$500)
@@ -411,7 +430,7 @@ June~2000
 
 % -------- Conference Presentations ----------------------------------------------------
 \textbf{Invited Conference Presentations}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item \textit{A bound for the Waring rank of the determinant via syzygies},
 SIAM Pacific Northwest Section Biennial Meeting, Seattle University
@@ -531,7 +550,7 @@ Joint Mathematics Meetings, January 8, 2007
 
 
 \textbf{Invited Seminar and Colloquium Presentations}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item \textit{Waring ranks of homogeneous forms}, University of Washington, Algebra and Algebraic Geometry Seminar, November 21, 2017
 \item \textit{Waring ranks of homogeneous forms}, York University, Combinatorics Seminar, November 7, 2016
 \item \textit{Waring ranks of homogeneous forms}, Fields Institute, University of Toronto, October 18, 2016
@@ -600,7 +619,9 @@ Tulane, September 25,~2006
 \end{enumerate}
 
 \textbf{Selected Local Seminar Presentations}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
+\item \textit{Frobenius's Theorem on Linear Preservers of Determinant},
+Mathematics Seminar, Boise State University, January 24, 2020
 \item \textit{Lucas’s theorem and MathOverflow 10},
 AGC Seminar, Boise State University, October 11, 2019
 \item \textit{Huang's proof of the sensitivity conjecture},
@@ -722,7 +743,7 @@ AGC Seminar, Boise State University, February 27, 2015
 
 \textbf{Conference, Session, and Seminar Organization}
 See \url{https://sites.google.com/site/zteitler/home/events}.
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item \textit{Special Session on Combinatorial and Computational
 Commutative Algebra and Algebraic Geometry}
 at the Spring 2016 Western Sectional AMS Meeting,
@@ -772,7 +793,7 @@ at the AMS 2008 Spring Southeastern Meeting, Baton Rouge, March 28-30, 2008 (co-
 
 
 \textbf{Selected Conferences and Workshops Attended}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Bruce Reznick 66 fest: A mensch of Combinatorial-Algebraic Mathematics, Bern, Switzerland, July 8, 2019
 \item Tensors in Computer Science and Geometry, Simons Institute for the Theory of Computing, Berkeley, CA, November 10--14, 2014
 \item Recent Advances in Algebraic Geometry: a conference in honor of Robert Lazarsfeld's 60th birthday,
@@ -799,7 +820,7 @@ University of Michigan, May 16--19, 2013
 
 
 \textbf{Academic Advising --- Graduate Advising}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item Jake Weedn \\
 M.S. Mathematics, Boise State University, 2020 (expected)
@@ -826,7 +847,7 @@ Thesis: \emph{The Frobenius problem} \\
 \end{enumerate}
 
 \textbf{Academic Advising --- Graduate Committee Member}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item Kennedy Courtney
 M.S. Mathematics, Boise State University, 2020 (expected) \\
@@ -875,7 +896,7 @@ Thesis: \emph{Regular homotopy of closed curves on surfaces} \\
 
 
 \textbf{Academic Advising --- Undergraduate Senior Theses}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Kayla Neal \\
 B.S. Mathematics, Boise State University, 2018 \\
 Senior thesis: \emph{The Cayley-Bacharach theorem}
@@ -910,7 +931,7 @@ Senior thesis: \emph{A brief encounter with linear codes} \\
 
 
 \textbf{Academic Advising --- Other}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Mentor for STEP Undergraduate researcher Nick Walker, 2012--2013
 
 \item Appointed to Graduate Faculty, 2011
@@ -920,7 +941,7 @@ Senior thesis: \emph{A brief encounter with linear codes} \\
 
 
 \textbf{Service --- Professional}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item Member, MAA Committee on Paul R. Halmos--Lester R. Ford Awards, 2017--2021
 
@@ -968,7 +989,7 @@ To date: 39 articles reviewed
 
 
 \textbf{Service --- Department}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 
 \item Personnel \& Budget Committee (PBC), 2017--Present; Chair, 2019-2020
 
@@ -1017,7 +1038,7 @@ To date: 39 articles reviewed
 \end{enumerate}
 
 \textbf{Service --- College}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item College Curriculum Committee (Math \& Science), 2019--Present
 
 \item Bronco Day, Apr.\ 11, 2015
@@ -1028,7 +1049,7 @@ To date: 39 articles reviewed
 
 
 \textbf{Service --- University}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Peer reviewer for Program Assessment Review, 2019
 
 \item University Curriculum Committee, September 2014--2016
@@ -1041,7 +1062,7 @@ To date: 39 articles reviewed
 \end{enumerate}
 
 \textbf{Community Outreach}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Co-developed and co-led Boise Math Teachers' Circle, 2015--present \\
 \url{http://boisemathcircles.org/teachers/} \\
 Supported 2015--2017 by American Institute of Mathematics and Boise State University Concurrent Enrollment
@@ -1060,19 +1081,20 @@ following inmate release on parole in December 2011, direct correspondence conti
 
 
 \textbf{Professional Development}
-\begin{enumerate}
-\item KnowBe4 Security Awareness Training, March, 2019
-\item Campus Security Authority Re-Certification Course, March, 2019
-\item Gender and Sex-Based Misconduct Prevention \& Response Online Training Class, December, 2018
-\item Clery Act Online Training Class, April, 2018
-\item Campus Security Authority Re-Certification Course, April, 2018
-\item Preventing Sexual Misconduct (Title IX) training, April, 2018
-\item State of Idaho Security Training, February, 2018
-\item Clery Act Online Training Class---Campus Security Authority Re-Certification Course, April, 2016
-\item Gender and Sex-Based Misconduct Prevention \& Response Online Training Class, September, 2015
-\item Clery Act Online Training Class, April, 2015
-\item Clery Act Online Training Class and Title IX Online Training Class, April, 2014
-\item Clery Act Online Training Class and Title IX Online Training Class, April, 2013
+\begin{enumerate}[revarabic]
+\item Boise State Center for Teaching and Learning (CTL) Faculty Learning Community (FCL): Designing for Student Success (DSS), Spring-Fall 2020
+%\item KnowBe4 Security Awareness Training, March, 2019
+%\item Campus Security Authority Re-Certification Course, March, 2019
+%\item Gender and Sex-Based Misconduct Prevention \& Response Online Training Class, December, 2018
+%\item Clery Act Online Training Class, April, 2018
+%\item Campus Security Authority Re-Certification Course, April, 2018
+%\item Preventing Sexual Misconduct (Title IX) training, April, 2018
+%\item State of Idaho Security Training, February, 2018
+%\item Clery Act Online Training Class---Campus Security Authority Re-Certification Course, April, 2016
+%\item Gender and Sex-Based Misconduct Prevention \& Response Online Training Class, September, 2015
+%\item Clery Act Online Training Class, April, 2015
+%\item Clery Act Online Training Class and Title IX Online Training Class, April, 2014
+%\item Clery Act Online Training Class and Title IX Online Training Class, April, 2013
 \item Faculty Advising Institute, April, 2012
 \item Great Ideas for Teaching and Learning Symposium, January, 2012
 \item Boise State Best Practices in STEM Teaching Symposium, January, 2011
@@ -1094,7 +1116,7 @@ following inmate release on parole in December 2011, direct correspondence conti
 
 
 \textbf{Professional Associations}
-\begin{enumerate}
+\begin{enumerate}[revarabic]
 \item Association for Women in Mathematics, 2016--Present
 \item Society for Industrial and Applied Mathematics, 2010--Present \\ SIAM Activity Group in Algebraic Geometry
 \item American Mathematical Society, 2004--Present
@@ -1315,6 +1337,10 @@ Term & Course & Course title & Credit & Students & Student \\
 
 \textbf{Fall 2019} & 403/503 & Linear Algebra (UD/G) & 3 & 13 & 39 \\
  & 498/598 & Seminar in Mathematics & 1 & 1 & 1 \\
+\addlinespace[0.1in]
+
+\textbf{Spring 2020} & 305 & Intro.\ to Abstract Algebra and Number Theory \\
+ & 414/514 & Real Analysis \\
 \addlinespace[0.1in]
 
 \bottomrule
